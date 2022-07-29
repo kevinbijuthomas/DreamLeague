@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Attacker</title>
+   <style type="text/css">
+     html {
+       height: 100%;
+     }
+
+     body{
+       background: linear-gradient(#28313B, #485461);;
+     }
+
+     .pack {
+       margin-top: 200px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+
+    #pack_img:hover {
+      -webkit-animation-name: spinner;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-duration: 1.5s;
+      animation-name: spinner;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 1.5s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+
+    /* WebKit and Opera browsers */
+    @-webkit-keyframes spinner {
+      from
+      {
+        -webkit-transform: rotateY(0deg);
+      }
+      to {
+        -webkit-transform: rotateY(-360deg);
+      }
+    }
+
+    /* all other browsers */
+    @keyframes spinner {
+      from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+      }
+      to
+      {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+      }
+    }
+
+  </style>
+ </head>
+ <body>
+   <div class="pack">
+     <a href="attackers2.php">
+       <img src="shoot.png" id="pack_img" alt="Logo image">
+     </a>
+   </div>
+ </body>
+ </html>

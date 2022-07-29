@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Updates</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		function week0(){
+			aj = new XMLHttpRequest();
+			aj.open("POST", "updateWeek.php");
+			aj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			aj.send("week=week0");
+		}
+
+		function week1(){
+			aj = new XMLHttpRequest();
+			aj.open("POST", "updateWeek.php");
+			aj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			aj.send("week=week1stats");
+		}
+
+		function week2(){
+			aj = new XMLHttpRequest();
+			aj.open("POST", "updateWeek.php");
+			aj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			aj.send("week=week2stats");
+		}
+
+		function openPack(){
+			aj = new XMLHttpRequest();
+			aj.open("POST", "updateWeek.php");
+			aj.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			aj.send("letOpen=yes");
+		}
+
+	</script>
+<button onclick="week0()">week0</button><br><br>
+<button onclick="week1()">week1</button><br><br>
+<button onclick="week2()">week2</button><br><br>
+<button onclick="openPack()">Allow to open a pack</button>
+</body>
+</html>
