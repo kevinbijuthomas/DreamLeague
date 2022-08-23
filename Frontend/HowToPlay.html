@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>How To Play</title>
+	<link rel="stylesheet" href="howtoplay.css">
+</head>
+<body>
+	<ul>
+	 <li><a class="active" href="ViewTeamPage.php">View Team</a></li>
+	 <li><a href="Leaderboard.php">Leaderboard</a></li>
+	 <li><a href="FixturesAndResults.php">Fixtures and Results</a></li>
+	 <li><a href="PremierLeagueTable.php">Premier League Table</a></li>
+	 <li><a href="HowToPlay.html">How to Play</a></li>
+	 <li><a href="packChoice2.php">Weekly Pack</a></li>
+	 <li style="float:right"><b><a href="logout.php">Log Out</a></b></li>
+	</ul>
+	<div class = "accordion-body">
+		<div class = "accordion">
+			<h1>How To Play</h1>
+			<hr>
+			<div class = "container">
+				<div class = "label">What is Dreamleague?</div>
+				<div class = "content"> Build a team of Premier League football players, score points based on their weekly real life performances! </div>
+			</div>
+			<hr>
+			<div class = "container">
+				<div class = "label">How do packs work?</div>
+				<div class = "content"> Start your journey by opening 'packs' that will give you fifteen players from the Premier League to complete your first squad. Every week, on the day before the start of the first Premier League game you will be given the chance to open another pack to replace one member of your squad.<br>Players are classed in to three ranks based on past season performances: gold, silver or bronze.</div>
+			</div>
+			<hr>
+
+			<div class = "container">
+				<div class = "label">What is the scoring system?</div>
+				<div class = "content"> <p>	- Goals scored = 10 <br>
+                										- Assists = 5 <br>
+            												- Red cards = -5 <br>
+        														- Yellow cards = -2 <br>
+    																- Clean sheets (goalkeeper and defenders) = 10 <br>
+																		- Appearance = 3 <br>
+																		- Own goals = -10 <br></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+			const accordion = document.getElementsByClassName('container');
+	 for (i=0; i<accordion.length; i++) {
+	  accordion[i].addEventListener('click', function () {
+	   this.classList.toggle('enable')
+	  })
+	 }
+	</script>
+</body>
+</html>
